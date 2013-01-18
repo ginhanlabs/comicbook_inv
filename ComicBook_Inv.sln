@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Web Developer Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComicBook_Inv", "ComicBook_Inv.csproj", "{653D9AB9-5EB9-4E67-BCF3-0F99FBDC056C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{653D9AB9-5EB9-4E67-BCF3-0F99FBDC056C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{653D9AB9-5EB9-4E67-BCF3-0F99FBDC056C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{653D9AB9-5EB9-4E67-BCF3-0F99FBDC056C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{653D9AB9-5EB9-4E67-BCF3-0F99FBDC056C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
