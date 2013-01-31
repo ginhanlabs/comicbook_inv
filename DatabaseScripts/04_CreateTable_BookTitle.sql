@@ -1,0 +1,21 @@
+USE [ComicBooks]
+GO
+
+/****** Object:  Table [dbo].[BookTitle]    Script Date: 01/22/2013 23:48:30 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[BookTitle](
+	[Title_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Title] [nvarchar](50) NOT NULL,
+ CONSTRAINT [PK_ComicTitle] PRIMARY KEY CLUSTERED 
+(
+	[Title_ID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+

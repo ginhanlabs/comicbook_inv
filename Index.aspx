@@ -1,16 +1,18 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="ComicBook_Inv.Index" %>
-
-<!-- purpose is develop in html5, c#, kendoui and ?? newer javascript frameworks -->
+<!-- purpose is develop in html5, c#, kendoui and javascript frameworks-i've decided on angular -->
 <!-- twitter: ginhanlabs -->
 <!DOCTYPE html>
-<html>
+<html ng-app>
 <head id="Head1" runat="server">
     <title>CB_Logger</title>
     <link rel="stylesheet" type="text/css" href="Styles/kendo.common.min.css" />
     <link rel="stylesheet" type="text/css" href="Styles/kendo.default.min.css" />
     <link rel="stylesheet" type="text/css" href="Styles/style.css" />
    <script type="text/javascript" src="Scripts/jquery-1.8.3.js"></script>
+    <script src="Scripts/angular.min.js" type="text/javascript"></script>
+    <script src="Scripts/underscore.js" type="text/javascript"></script>
     <script type="text/javascript" src="Scripts/kendo.web.min.js"></script>
+    <script src="Scripts/Controllers.js" type="text/javascript"></script>
   
     <script type="text/javascript">
         $(document).ready(function () {
@@ -27,7 +29,7 @@
 </head>
 <body>
     <ul class="menu">
-        <li><a href="#" onclick="alert('hi')";>CB Logger</a></li>
+        <li><a href="Index.aspx">CB Logger</a></li>
         <li>Admin
             <ul>
                 <li>New Title</li>
@@ -46,24 +48,24 @@
         <div class="listings_container">
         <ul class="listings">
             <li>Marvel
-                <ul>
-                    <li>Amazing spiderman</li>
-                    <li>Future Foundation</li>
-                    <li>X-men</li>
+                <ul ng-controller="MarvelListCtrl">
+                <li ng-repeat="t in MarvelComicTitles">
+                    {{ t.title }}
+                   </li>
                 </ul>
             </li>
             <li>DC
-                <ul>
-                    <li>Batman</li>
-                    <li>Superman</li>
-                    <li>Flash</li>
+                <ul ng-controller="DCListCtrl">
+                    <li ng-repeat="t in DCComicTitles">
+                    {{ t.title }}
+                   </li>
                 </ul>
             </li>
            <li>Image
-                <ul>
-                    <li>Spawn</li>
-                    <li>Savage Dragon</li>
-                    <li>Wildcats</li>
+                <ul ng-controller="ImageComicsListCtrl">
+                    <li ng-repeat="t in ImageComicTitles">
+                    {{ t.title }}
+                   </li>
                 </ul>
             </li>
            

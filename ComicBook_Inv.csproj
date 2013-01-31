@@ -51,11 +51,23 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DatabaseScripts\00_Run_Scripts_In_Order.txt" />
+    <Content Include="DatabaseScripts\01_Create_Database.sql" />
+    <Content Include="DatabaseScripts\02_CreateTable_BookInfo.sql" />
+    <Content Include="DatabaseScripts\03_CreateTable_BookCondition.sql" />
+    <Content Include="DatabaseScripts\04_CreateTable_BookTitle.sql" />
+    <Content Include="DatabaseScripts\05_CreateTable_BookPublisher.sql" />
+    <Content Include="DatabaseScripts\06_CreateTable_BookSpendings.sql" />
+    <Content Include="dbase_design.txt" />
     <Content Include="Index.aspx" />
+    <Content Include="Screenshots\Screenshot_01.png" />
+    <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\Controllers.js" />
     <Content Include="Scripts\jquery-1.8.3.js" />
     <Content Include="Scripts\jquery-ui-1.9.2.custom.min.js" />
     <Content Include="Scripts\kendo.web-vsdoc.js" />
     <Content Include="Scripts\kendo.web.min.js" />
+    <Content Include="Scripts\underscore.js" />
     <Content Include="Styles\Default\editor.png" />
     <Content Include="Styles\Default\imagebrowser.png" />
     <Content Include="Styles\Default\loading-image.gif" />
@@ -83,6 +95,9 @@
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.md" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
